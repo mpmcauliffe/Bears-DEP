@@ -1,9 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
 
-const App = props => {
-}
+const App = props => 
+    <h1>I AM APP</h1>
 
 
-export default App;
+export default App
