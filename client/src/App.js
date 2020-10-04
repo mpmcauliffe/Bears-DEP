@@ -1,8 +1,12 @@
 import React from 'react'
+import { Landing } from './pages/'
 
 
-const App = props => 
-    <h1>I AM APP</h1>
+const App = props => {
+    return (
+        <Landing />
+    )
+}
 
 
 export default App

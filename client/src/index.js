@@ -1,10 +1,18 @@
-import React from 'react'
+import React,  { Fragment, } from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
+import { GlobalStyle, } from './themes/globalStyle'
+import './themes/fonts.css'
 import * as serviceWorker from './serviceWorker'
 
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+    <Fragment>
+        <GlobalStyle />
+        <App />
+    </Fragment>,
+    document.getElementById('root')
+)
 
 
 // If you want your app to work offline and load faster, you can change
