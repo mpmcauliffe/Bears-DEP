@@ -1,25 +1,16 @@
 import React, { useReducer, } from 'react'
 import OpSwitchContext from './opSwitchContext'
-import { SET_ACTIVE_STATE, 
-    HANDLE_CLICK, 
-    GET_ACTIVE_STATE,
-    SET_ERROR } from './types'
+import speciesReducer from './speciesReducer'
+import { UPDATE_SPECIES_OVERLAY, } from './types'
 
 
-export const OpSwitchState = () => {
+export const OpSwitchState = props => {
     const initialState = {
-        items: [ ],
-        active: 0,
-        buttonSize: 0,
-        error: [ ],
+        speciesOverlay: 'black'
     }
+    const [state, dispatch] = useReducer(speciesReducer, initialState)
 
-    const [state, dispatch] = useReducer(authReducer, initialState)
-
-    
-    const setInitialState = buttonArray => {
-        if (buttonArray.length )
-    }
+    const changeSpeciesOverlay = buttonName => dispatchEvent({ type: UPDATE_SPECIES_OVERLAY, payload: buttonName })
 
 
     return (
