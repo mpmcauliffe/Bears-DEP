@@ -1,19 +1,20 @@
 import React from 'react'
+import SpeciesState from './context/SpeciesState'
 import { Landing } from './pages/'
-import { MainController, Map, } from './components'
-
+import { MainController, Map, MainText, } from './components'
 
 
 const App = props => {
     return (
-        <div>
+        <SpeciesState>
             {/* <Landing /> */}
             
             
             <Map />
             <MainController />
+            <MainText />
              
-        </div>
+        </SpeciesState>
     )
 }
 

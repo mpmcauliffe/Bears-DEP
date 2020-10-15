@@ -6,7 +6,7 @@ export default (state, action) => {
         case UPDATE_SPECIES_OVERLAY:
             return {
                 ...state,
-                
+                speciesOverlay: action.payload.split(' ')[0].toLowerCase(),
             }
         
         default:

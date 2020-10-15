@@ -1,27 +1,32 @@
 import React, { useReducer, } from 'react'
-import OpSwitchContext from './opSwitchContext'
+import ActiveSpeciesContext from './activeSpeciesContext'
 import speciesReducer from './speciesReducer'
 import { UPDATE_SPECIES_OVERLAY, } from './types'
 
 
-export const OpSwitchState = props => {
+const SpeciesState = props => {
     const initialState = {
-        speciesOverlay: 'black'
+        speciesOverlay: 'black',
+        species: ['Black Bear', 'Brown Bear', 'Moon Bear', 'Panda Bear', 'Polar Bear',
+                        'Sloth Bear', 'Spectacled Bear', 'Sun Bear'],
     }
     const [state, dispatch] = useReducer(speciesReducer, initialState)
 
-    const changeSpeciesOverlay = buttonName => dispatchEvent({ type: UPDATE_SPECIES_OVERLAY, payload: buttonName })
+    const changeSpeciesOverlay = buttonName => dispatch({ type: UPDATE_SPECIES_OVERLAY, payload: buttonName })
 
 
     return (
-        <OpSwitchContext.Provider
-
+        <ActiveSpeciesContext.Provider
+            value={{ speciesOverlay: state.speciesOverlay,
+                changeSpeciesOverlay,}}
 
         >   {props.children}
-        </OpSwitchContext.Provider>
+        </ActiveSpeciesContext.Provider>
     )
 }
 
+
+export default SpeciesState
 
 // export default (state, action) => {
 //     switch (action.type) {
