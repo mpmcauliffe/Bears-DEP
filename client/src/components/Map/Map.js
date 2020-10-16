@@ -1,6 +1,17 @@
 import React, { useContext, } from 'react'
+import styled from 'styled-components'
 import activeSpeciesContext from '../../context/activeSpeciesContext'
 
+
+const MapFrame = styled.section`
+    margin: 0 auto;
+    
+    .overlay { 
+        position: absolute; 
+        z-index: 10; 
+        left: 0;
+    }
+`
 
 export const Map = () => {
     //const [mapOverlay, setMapOverlay]   = useState('')
@@ -9,20 +20,16 @@ export const Map = () => {
 
 
     return (
-        <div>
+        <MapFrame>
             <img 
                 alt='map'
-                src={require(`./natural_earth.svg`)} 
-                style={{ width: '77rem', }} />
+                src={require(`./natural_earth.svg`)} />
 
             {/** */}
             <img 
                 alt='brown-bear'
                 src={require(`./overlays/${speciesOverlay}.svg`)} 
-                style={{ position: 'absolute', 
-                    zIndex:10, 
-                    left: 0, 
-                    width: '77rem', }} />
-        </div>
+                className='overlay' />
+        </MapFrame>
     )
 }

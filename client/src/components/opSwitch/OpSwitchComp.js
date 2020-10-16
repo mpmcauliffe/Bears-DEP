@@ -5,7 +5,7 @@ export const ButtonSet = styled.button`
     font-style:normal;
     font-weight: 500;
     font-size: ${props => props.theme.inter};
-    max-height: 3rem;
+    max-height: 8rem;
 
     float: right;
     /* color: ${props => props.theme.colorPrimary}; */
