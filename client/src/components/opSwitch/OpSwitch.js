@@ -1,5 +1,6 @@
-import React, { useState, useEffect, } from 'react'
+import React, { useState, useEffect, useContext, } from 'react'
 import styled from 'styled-components'
+import activeSpeciesContext from '../../context/activeSpeciesContext'
 import PropTypes from 'prop-types'
 import { ButtonSet, } from './OpSwitchComp'
 
@@ -21,6 +22,9 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
 
     const [buttonState, setButtonState]     = useState([ ])
     const [buttonSize, setButtonSize]       = useState(0)
+
+    // const speciesContext                            = useContext(activeSpeciesContext)
+    // const { speciesOverlay }                        = speciesContext
 
     useEffect(() => {
 

@@ -4,13 +4,14 @@ import { OpSwitch, } from '../opSwitch/OpSwitch'
 
 
 export const Subs = () => {
-    const [showSubOption, setShowOption]    = useState(false)
-    const speciesContext                    = useContext(activeSpeciesContext)
-    const { speciesOverlay, }               = speciesContext
+    const [showSubOption, setShowOption]                = useState(false)
+    const [, setState]                                  = useState()
+    const speciesContext                                = useContext(activeSpeciesContext)
+    const { speciesOverlay, changeOverlayOpacity, }     = speciesContext
 
     const subButtons = ['hide subspecies', 'show subspecies']
 
-    const handleToggle = e => console.log(e)
+    const handleToggle = e => changeOverlayOpacity(e)
 
     useEffect(() => {
         speciesOverlay === 'brown' || speciesOverlay === 'black' ? setShowOption(true) : setShowOption(false)

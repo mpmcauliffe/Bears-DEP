@@ -7,20 +7,19 @@ const MapFrame = styled.section`
     position: relative;
     margin: 3rem auto 3rem auto;
     max-width: 76.8rem;
-    
-    .overlay { 
-        position: absolute; 
-        z-index: 10; 
-        left: 0;
-        max-width: 76.8rem;
-    }
-    /* @media (min-width: 769px) { .overlay { left: 10vw; } } */
+`
+const Overlay = styled.img`
+    position: absolute; 
+    z-index: 10; 
+    left: 0;
+    max-width: 76.8rem;
+    opacity: ${p => p.transparency ? .2 : 1};
 `
 
 export const Map = () => {
     //const [mapOverlay, setMapOverlay]   = useState('')
-    const speciesContext                = useContext(activeSpeciesContext)
-    const { speciesOverlay, }           = speciesContext
+    const speciesContext                            = useContext(activeSpeciesContext)
+    const { speciesOverlay, overlayTransparency }   = speciesContext
 
 
     return (
@@ -30,10 +29,10 @@ export const Map = () => {
                 src={require(`./natural_earth.svg`)} />
 
             {/** */}
-            <img 
+            <Overlay 
                 alt='brown-bear'
                 src={require(`./overlays/${speciesOverlay}.svg`)} 
-                className='overlay' />
+                transparency={overlayTransparency} />
         </MapFrame>
     )
 }
