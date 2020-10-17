@@ -24,7 +24,7 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
     const [buttonSize, setButtonSize]       = useState(0)
 
     // const speciesContext                            = useContext(activeSpeciesContext)
-    // const { speciesOverlay }                        = speciesContext
+    // const { resetOption }                        = speciesContext
 
     useEffect(() => {
 
