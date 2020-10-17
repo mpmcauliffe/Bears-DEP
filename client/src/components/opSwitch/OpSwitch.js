@@ -1,7 +1,21 @@
 import React, { useState, useEffect, } from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { ButtonSet, } from './OpSwitchComp'
 
+
+const ButtonWrapper = styled.div`
+    width: 100%;
+    margin: 0 auto 5rem auto;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media(min-width: 769px) { width: 90%; }
+    @media(min-width: 1081px) { width: 77%; }
+    @media(min-width: 1599px) { width: 69%; }
+    @media(min-width: 1921px) { width: 63%; }
+`
 
 export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => {
 
@@ -37,7 +51,7 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
 
 
     return (
-        <div style={{ display: 'flex', width: '100%', }}>
+        <ButtonWrapper>
             {buttonState.map(button => (
                     <ButtonSet
                         key={button.name} 
@@ -49,7 +63,7 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
                     >   {button.name}
                     </ButtonSet>
             ))}
-        </div>
+        </ButtonWrapper>
     )
 }
 

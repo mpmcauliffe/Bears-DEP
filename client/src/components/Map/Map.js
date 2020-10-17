@@ -4,13 +4,17 @@ import activeSpeciesContext from '../../context/activeSpeciesContext'
 
 
 const MapFrame = styled.section`
-    margin: 0 auto;
+    position: relative;
+    margin: 3rem auto 3rem auto;
+    max-width: 76.8rem;
     
     .overlay { 
         position: absolute; 
         z-index: 10; 
         left: 0;
+        max-width: 76.8rem;
     }
+    /* @media (min-width: 769px) { .overlay { left: 10vw; } } */
 `
 
 export const Map = () => {

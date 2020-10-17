@@ -7,7 +7,7 @@ import { UPDATE_SPECIES_OVERLAY, } from './types'
 const SpeciesState = props => {
     const initialState = {
         speciesOverlay: 'black',
-        species: ['Black Bear', 'Brown Bear', 'Moon Bear', 'Panda Bear', 'Polar Bear',
+        species: ['Black Bear', 'Brown Bear', 'Giant Panda', 'Moon Bear', 'Polar Bear',
                         'Sloth Bear', 'Spectacled Bear', 'Sun Bear'],
     }
     const [state, dispatch] = useReducer(speciesReducer, initialState)

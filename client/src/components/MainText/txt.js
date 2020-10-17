@@ -46,21 +46,7 @@ export const txt = {
         the Eurasian brown bear and is believed to have a population of just 50
         to 60 bears.`
     ],
-    'moon': [
-        `The Asian black bear (Ursus thibetanus, previously known as
-        Selenarctos thibetanus), also known as the Asiatic black bear, moon
-        bear and white-chested bear, is a medium-sized bear species native to
-        Asia that is largely adapted to an arboreal lifestyle. It lives
-        in the Himalayas, in the northern parts of the Indian subcontinent, the
-        Korean Peninsula, northeastern China, the Russian Far East, the Honshū
-        and Shikoku islands of Japan, and Taiwan. It is classified as
-        vulnerable by the International Union for Conservation of Nature
-        (IUCN), mostly because of deforestation and hunting for its body
-        parts. Although largely herbivorous, Asian black bears can be very
-        aggressive toward humans, who frequently trap or kill them for
-        traditional medicine.`
-    ],
-    'panda': [
+    'giant': [
         `The giant panda (Ailuropoda melanoleuca; Chinese: 大熊猫; pinyin:
         dàxióngmāo), also known as the panda bear or simply the panda, is a
         bear native to south central China. It is characterised by large,
@@ -96,6 +82,21 @@ export const txt = {
         example, appearing since 1982 on gold panda bullion coins and as one of
         the five Fuwa mascots of the Beijing Olympics.`
     ],
+    'moon': [
+        `The Asian black bear (Ursus thibetanus, previously known as
+        Selenarctos thibetanus), also known as the Asiatic black bear, moon
+        bear and white-chested bear, is a medium-sized bear species native to
+        Asia that is largely adapted to an arboreal lifestyle. It lives
+        in the Himalayas, in the northern parts of the Indian subcontinent, the
+        Korean Peninsula, northeastern China, the Russian Far East, the Honshū
+        and Shikoku islands of Japan, and Taiwan. It is classified as
+        vulnerable by the International Union for Conservation of Nature
+        (IUCN), mostly because of deforestation and hunting for its body
+        parts. Although largely herbivorous, Asian black bears can be very
+        aggressive toward humans, who frequently trap or kill them for
+        traditional medicine.`
+    ],
+    
     'polar': [
         `The polar bear (Ursus maritimus) is a hypercarnivorous bear whose
         native range lies largely within the Arctic Circle, encompassing the
