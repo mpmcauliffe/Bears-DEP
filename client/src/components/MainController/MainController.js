@@ -18,6 +18,5 @@ export const MainController = () => {
         <OpSwitch 
             optButtons={species}
             handleToggle={handleToggle} />
-
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SpeciesState from './context/SpeciesState'
 import { Landing } from './pages/'
-import { MainController, Map, MainText, } from './components'
+import { MainController, Map, MainText, Subs, } from './components'
 
 
 const ContentContainer = styled.section`
@@ -24,7 +24,8 @@ const App = props => {
             
             <Map />
             <MainController />
-            
+            <Subs />
+
             <ContentContainer>
                 <MainText />
             </ContentContainer>
