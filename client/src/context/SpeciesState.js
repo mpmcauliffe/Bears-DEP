@@ -18,8 +18,8 @@ const SpeciesState = props => {
 
     return (
         <ActiveSpeciesContext.Provider
-            value={{ speciesOverlay: state.speciesOverlay,
-                overlayTransparency: state.overlayTransparency,
+            value={{ speciesOverlay: state.speciesOverlay,          // string
+                overlayTransparency: state.overlayTransparency,     // bool
 
                 changeSpeciesOverlay,
                 changeOverlayOpacity, }}

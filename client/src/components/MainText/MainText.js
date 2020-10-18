@@ -7,6 +7,7 @@ import { txt, } from './txt'
 const TextContainer = styled.div`
     width: 95%;
     margin: 0 auto;
+    padding-bottom: 50rem;
 
     @media(min-width: 769px) { width: 80%; }
     @media(min-width: 1081px) { width: 67%; }
