@@ -29,6 +29,7 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
     useEffect(() => {
 
         setButtonState(optButtons.map((opt, index) => {
+            console.log(defaultOpt)
             return {
                 name: opt,
                 active: index === defaultOpt ? true : false,
