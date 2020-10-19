@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext, } from 'react'
+import React, { useState, useEffect, } from 'react'
 import styled from 'styled-components'
-import activeSpeciesContext from '../../context/activeSpeciesContext'
+//import activeSpeciesContext from '../../context/activeSpeciesContext'
 import PropTypes from 'prop-types'
 import { ButtonSet, } from './OpSwitchComp'
 
@@ -27,9 +27,9 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
     // const { resetOption }                        = speciesContext
 
     useEffect(() => {
-
+        console.log(optButtons)
         setButtonState(optButtons.map((opt, index) => {
-            console.log(defaultOpt)
+            //console.log(defaultOpt)
             return {
                 name: opt,
                 active: index === defaultOpt ? true : false,

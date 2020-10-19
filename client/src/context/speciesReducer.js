@@ -22,7 +22,7 @@ export default (state, action) => {
                     ? state.speciesOverlay === 'brown' 
                         ? 'atlas'
                         : state.speciesOverlay === 'black'
-                            ? ''
+                            ? 'americanus'
                             : ''
                     : '',
                 showSubOverly: mod.split(' ')[0].toLowerCase() === 'show' ? true : false,
