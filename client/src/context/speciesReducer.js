@@ -10,6 +10,7 @@ export default (state, action) => {
                 ...state,
                 speciesOverlay: action.payload.split(' ')[0].toLowerCase(),
                 overlayTransparency: false,
+                subspeciesOverlay: '',
                 showSubOverly: false,
             }
         
@@ -18,20 +19,18 @@ export default (state, action) => {
             return {
                 ...state,
                 overlayTransparency: mod.split(' ')[0].toLowerCase() === 'show' ? true : false, 
-                subspeciesOverly: mod.split(' ')[0].toLowerCase() === 'show' 
-                    ? state.speciesOverlay === 'brown' 
-                        ? 'atlas'
-                        : state.speciesOverlay === 'black'
-                            ? 'americanus'
-                            : ''
-                    : '',
+                subspeciesOverlay: state.subspeciesOverlay === '' 
+                    ?   state.speciesOverlay === 'black'
+                        ? 'americanus'
+                        : 'atlas'
+                    : state.subspeciesOverlay,
                 showSubOverly: mod.split(' ')[0].toLowerCase() === 'show' ? true : false,
             }
 
         case ADD_SUBSPECIES_OVERLAY:
             return {
                 ...state,
-                subspeciesOverly: action.payload.split(' ')[0].toLowerCase(),
+                subspeciesOverlay: action.payload.split(' ')[0].toLowerCase(),
             }
         
         default:

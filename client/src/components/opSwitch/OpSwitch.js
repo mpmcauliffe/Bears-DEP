@@ -27,7 +27,7 @@ export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => 
     // const { resetOption }                        = speciesContext
 
     useEffect(() => {
-        console.log(optButtons)
+        // console.log(optButtons)
         setButtonState(optButtons.map((opt, index) => {
             //console.log(defaultOpt)
             return {

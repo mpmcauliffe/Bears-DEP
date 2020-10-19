@@ -20,8 +20,8 @@ export const Map = () => {
     //const [mapOverlay, setMapOverlay]   = useState('')
     const speciesContext                            = useContext(activeSpeciesContext)
     const { speciesOverlay, overlayTransparency,
-        subspeciesOverly, showSubOverly, }   = speciesContext
-//console.log(subspeciesOverly)
+        subspeciesOverlay, showSubOverly, }   = speciesContext
+//console.log(subspeciesOverlay)
 
     return (
         <MapFrame>
@@ -38,7 +38,7 @@ export const Map = () => {
             {showSubOverly &&
                 <Overlay 
                     alt='bear-sub-overlay'
-                    src={require(`./${speciesOverlay}/${subspeciesOverly}.svg`)} />
+                    src={require(`./${speciesOverlay}/${subspeciesOverlay}.svg`)} />
             }
         </MapFrame>
     )

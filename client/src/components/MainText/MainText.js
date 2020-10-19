@@ -7,7 +7,7 @@ import { txt, } from './txt'
 const TextContainer = styled.div`
     width: 95%;
     margin: 0 auto;
-    padding-bottom: 50rem;
+    padding-bottom: ${p => p.paddingMod ? '50rem' : '10rem'};
 
     @media(min-width: 769px) { width: 80%; }
     @media(min-width: 1081px) { width: 67%; }
@@ -15,11 +15,12 @@ const TextContainer = styled.div`
 `
 
 export const MainText = () => {
-    const speciesContext                = useContext(activeSpeciesContext)
-    const { speciesOverlay, }           = speciesContext
+    const speciesContext                                   = useContext(activeSpeciesContext)
+    const { speciesOverlay, overlayTransparency, }         = speciesContext
+    console.log(overlayTransparency)
 
     return (
-        <TextContainer>
+        <TextContainer paddingMod={overlayTransparency}>
             {txt[`${speciesOverlay}`].map(text => (
                 <p key={text.substring(1,20)}>{text}</p>
             ))}

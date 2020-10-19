@@ -11,21 +11,20 @@ export const Subs = () => {
     
     const speciesContext                                = useContext(activeSpeciesContext)
     const { speciesOverlay, changeOverlayOpacity, 
-        overlayTransparency, addSubspeciesOverlay,
-        showSubOverly, }    = speciesContext
+        overlayTransparency, addSubspeciesOverlay, }    = speciesContext
 
     const subButtons = ['hide subspecies', 'show subspecies']
 
     const handleToggleSubMenu = e => {
         if (typeof e === 'string') {
             changeOverlayOpacity(e)
+
             const mod = e.split(' ')[0].toLowerCase()
             mod === 'show' ? setActiveToggle(1) : setActiveToggle(0)
             
             return
         }
         setActiveToggle(0)
-        //setActiveSub(false)
         changeOverlayOpacity('hide')
     }
 
@@ -61,8 +60,7 @@ export const Subs = () => {
                         defaultOpt={0}
                         optButtons={brownSubs}
                         handleToggle={handleToggleSubspecies} />
-                }
-                
+                }         
             </SubBay>
         </Fragment>
         
