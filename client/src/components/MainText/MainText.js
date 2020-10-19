@@ -17,7 +17,7 @@ const TextContainer = styled.div`
 export const MainText = () => {
     const speciesContext                                   = useContext(activeSpeciesContext)
     const { speciesOverlay, overlayTransparency, }         = speciesContext
-    console.log(overlayTransparency)
+    //console.log(overlayTransparency)
 
     return (
         <TextContainer paddingMod={overlayTransparency}>

@@ -15,7 +15,7 @@ const ButtonWrapper = styled.div`
     @media(min-width: 769px) { width: 90%; }
     @media(min-width: 1081px) { width: 77%; }
     @media(min-width: 1599px) { width: 69%; }
-    @media(min-width: 1921px) { width: 63%; }
+    @media(min-width: 1921px) { width: 55 %; }
 `
 
 export const OpSwitch = ({ optButtons, setting, handleToggle, defaultOpt, }) => {
