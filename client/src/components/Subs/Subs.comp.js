@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
 
-const findMapMargins = () => {
-    return `${(window.innerWidth - 817)}px`
-}
-
 export const SubBay = styled.div`
     position: fixed;
     bottom: ${p => p.posModifier ? '-40rem' : '-80rem'};
@@ -14,7 +10,9 @@ export const SubBay = styled.div`
 
     text-align: right;
     padding: 1.5rem;
-    background: linear-gradient(180deg, rgba(169, 153, 150,1) 25%, rgba(255,255,255,1) 70%);
+    background: linear-gradient(180deg, rgba(169,153,150,1) 0%, rgba(237,237,237,1) 50%);
+    
+    visibility: ${p => p.posModifier ? 'visible' : 'hidden'};
     transition: bottom 500ms;
     transition-timing-function: cubic-bezier(.46,-0.37,.57,1.24);
 

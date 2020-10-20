@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-const findMapMargins = () => {
-    return `${-(window.innerWidth - 793) / 2}px`
-}
+// const findMapMargins = () => {
+//     return `${-(window.innerWidth - 793) / 2}px`
+// }
 
 export const MapFrame = styled.section`
     position: relative;

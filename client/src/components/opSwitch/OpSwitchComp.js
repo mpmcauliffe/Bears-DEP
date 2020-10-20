@@ -15,13 +15,13 @@ export const ButtonSet = styled.button`
     /* float: right; */
     /* color: ${props => props.theme.colorPrimary}; */
     color: #182e1e;
-    background: ${props => (props.active ? '#e6a495' : '#e6cfca')};
-    border: none;
+    background: ${p => (p.active ? p.theme.activeGray : p.theme.unitGray)};
+    border: .1rem solid ${p => p.theme.backdropDark};
     cursor: pointer;
     transition: 500ms;
 
-    &:focus {
-        outline: none;
-        /* border: .1rem solid red; */
+    &:focus { 
+        outline: none; 
+        border: .2rem solid ${p => p.theme.activeGray}; 
     }
 `
