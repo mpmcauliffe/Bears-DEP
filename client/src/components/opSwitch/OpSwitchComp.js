@@ -21,7 +21,7 @@ export const ButtonSet = styled.button`
     transition: 500ms;
 
     &:focus { 
-        outline: none; 
+        outline: none;                           
         border: .2rem solid ${p => p.theme.activeGray}; 
     }
 `

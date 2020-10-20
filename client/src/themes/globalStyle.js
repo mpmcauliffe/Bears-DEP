@@ -15,8 +15,9 @@ export const GlobalStyle = createGlobalStyle`
         font-family: sans-serif;
         overflow-x: hidden;
         height: 100vh;
-    p, button {
-        font-size: 1.9rem;
+    p, button, a { font-size: 1.9rem; }
+    a {
+        text-decoration: none;
     }
 `
 // @media (min-width: 1439px) {

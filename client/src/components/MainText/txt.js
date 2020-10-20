@@ -16,6 +16,7 @@ export const txt = {
         bear species not considered by the IUCN to be globally threatened with
         extinction.`
     ],
+
     'brown': [
         `The brown bear (Ursus arctos) is a large bear species found across
         Eurasia and North America. In North America, the populations of
@@ -46,6 +47,7 @@ export const txt = {
         the Eurasian brown bear and is believed to have a population of just 50
         to 60 bears.`
     ],
+
     'giant': [
         `The giant panda (Ailuropoda melanoleuca; Chinese: 大熊猫; pinyin:
         dàxióngmāo), also known as the panda bear or simply the panda, is a
@@ -82,6 +84,7 @@ export const txt = {
         example, appearing since 1982 on gold panda bullion coins and as one of
         the five Fuwa mascots of the Beijing Olympics.`
     ],
+
     'moon': [
         `The Asian black bear (Ursus thibetanus, previously known as
         Selenarctos thibetanus), also known as the Asiatic black bear, moon
@@ -125,6 +128,7 @@ export const txt = {
         bear". It is sometimes referred to as the "nanook", based on the
         Inuit term nanuq.`
     ],
+
     'sloth': [
         `The sloth bear (Melursus ursinus) is a myrmecophagous bear species
         native to the Indian subcontinent. It feeds on fruits, ants and
@@ -144,6 +148,7 @@ export const txt = {
         and claws. Sloth bears have been tamed and used as performing animals
         and as pets.`
     ],
+
     'spectacled': [
         `The spectacled bear (Tremarctos ornatus), also known as the Andean
         bear, Andean short-faced bear, or mountain bear and locally as jukumari
@@ -156,6 +161,7 @@ export const txt = {
         subfamily Tremarctinae. The species is classified as Vulnerable by the
         IUCN because of habitat loss.`
     ],
+
     'sun': [
         `The sun bear (Helarctos malayanus) is a species in the family Ursidae
         occurring in the tropical forests of Southeast Asia. It is the smallest
@@ -190,4 +196,22 @@ export const txt = {
         declined by 35% over the past three decades. The IUCN has listed this
         species as vulnerable.`
     ],
+}
+
+export const links = {
+    'black': `https://en.wikipedia.org/wiki/American_black_bear`,
+
+    'brown': `https://en.wikipedia.org/wiki/Brown_bear`,
+
+    'giant': `https://en.wikipedia.org/wiki/Giant_panda`,
+
+    'moon': `https://en.wikipedia.org/wiki/Asian_black_bear`,
+
+    'polar': `https://en.wikipedia.org/wiki/Polar_bear`,
+
+    'sloth': `https://en.wikipedia.org/wiki/Sloth_bear`,
+
+    'spectacled': `https://en.wikipedia.org/wiki/Spectacled_bear`,
+
+    'sun': `https://en.wikipedia.org/wiki/Sun_bear`,
 }

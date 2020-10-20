@@ -1,7 +1,7 @@
 import React, { useContext, } from 'react'
 import styled from 'styled-components'
 import activeSpeciesContext from '../../context/activeSpeciesContext'
-import { txt, } from './txt'
+import { txt, links, } from './txt'
 
 
 const TextContainer = styled.div`
@@ -24,6 +24,11 @@ export const MainText = () => {
             {txt[`${speciesOverlay}`].map(text => (
                 <p key={text.substring(1,20)}>{text}</p>
             ))}
+
+            <p>To learn more about the {speciesOverlay}&nbsp; 
+                {speciesOverlay !== 'giant' ? 'bear' : 'panda'}
+                &nbsp;click&nbsp;<a href={`${links[`${speciesOverlay}`]}`}>here.</a> 
+            </p>
         </TextContainer>
     )
 }
