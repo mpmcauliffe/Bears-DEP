@@ -27,17 +27,17 @@ export const SubBay = styled.div`
     }
 
     @media (min-width: 800px) { bottom: ${p => p.posModifier ? '-58rem' : '-80rem'}; }
-
     @media (min-width: 1280px) {
         position: absolute;
-        right: ${p => p.posModifier ? '2rem' : '-80rem'};
-        /* right: 2rem; */
+        right: ${p => p.posModifier ? '1%' : '-80rem'};
         top: 3rem;
         height: 41.5rem;
-        /* width: ${findMapMargins()}; */
         width: 46.5rem;
-        /* width: ${p => p.posModifier ? findMapMargins() : 0}; */
         transition: right 500ms;
         transition-timing-function: cubic-bezier(.46,-0.37,.57,1.24);
     }
+    @media (min-width: 1600px) { right: ${p => p.posModifier ? '10%' : '-80rem'}; }
+    @media (min-width: 1800px) { right: ${p => p.posModifier ? '14%' : '-80rem'}; }
+    @media (min-width: 2000px) { right: ${p => p.posModifier ? '18%' : '-80rem'}; }
+    @media (min-width: 2500px) { right: ${p => p.posModifier ? '24%' : '-80rem'}; }
 `
