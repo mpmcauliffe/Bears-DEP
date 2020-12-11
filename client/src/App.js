@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import SpeciesState from './context/SpeciesState'
-import { Landing } from './pages/'
+import { Footer, Landing, } from './pages/'
 import { MainController, Map, MainText, Subs, } from './components'
 
+
+const BackgroundContainer = styled.div`
+    width: 100%;
+    background: linear-gradient(0deg, rgba(248,252,255,1) 0%, rgba(242,250,255,1) 50%);
+`
 
 const ContentContainer = styled.section`
     width: 100%;
@@ -19,17 +24,22 @@ const ContentContainer = styled.section`
 
 const App = props => {
     return (
-        <SpeciesState>
-            {/*  */}
-            <Landing />
-            <Map />
-            <MainController />
-            <Subs />
+        <BackgroundContainer>
+            <SpeciesState>
+                {/*  */}
+                <Landing />
+                <Map />
+                <MainController />
+                <Subs />
 
-            <ContentContainer>
-                <MainText />
-            </ContentContainer>
-        </SpeciesState>
+                <ContentContainer>
+                    <MainText />
+                </ContentContainer>
+            </SpeciesState>
+
+            <Footer />
+        </BackgroundContainer>
+        
     )
 }
 

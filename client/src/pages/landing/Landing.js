@@ -33,6 +33,3 @@ export const Landing = () => {
         </LandingContainer>
     )
 }
-
-
-// <a href='https://www.freepik.com/vectors/flyer'>Flyer vector created by pch.vector - www.freepik.com</a>
