@@ -20,8 +20,8 @@ const ContentContainer = styled.section`
 const App = props => {
     return (
         <SpeciesState>
-            {/* <Landing /> */}
-            
+            {/*  */}
+            <Landing />
             <Map />
             <MainController />
             <Subs />

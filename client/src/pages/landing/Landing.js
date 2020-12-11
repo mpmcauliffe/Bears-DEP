@@ -1,18 +1,38 @@
 import React from 'react'
-import './BEARS.css'
+import styled from 'styled-components'
+//import './BEARS.css'
+
+
+const LandingContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+`
 
 export const Landing = () => {
     return (
-        <div>
-            <h1 className='NormalCharacterStyle'>BEARS</h1>
+        <LandingContainer>
+            {/* <h1 className='NormalCharacterStyle'>BEARS</h1> */}
+            
             <img 
+                alt='title-BEARS'
+                src={require(`./BEARS_logo.png`)}
+                style={{ width: '33%', }} />
+                
+            {/*<img 
                 alt='bears' 
-                src={require(`./BEARS-2.png`)} 
-                style={{ width: '101.7%', 
-                    position: 'absolute',
+                src={require(`./bears-at-play.png`)} 
+                style={{ width: '70%', 
+                    //position: 'absolute',
                    // top: '-150px', 
                  //   left: '-25px',
-                 }} />
-        </div>
+                 }} /> */}
+            
+        </LandingContainer>
     )
 }
+
+
+// <a href='https://www.freepik.com/vectors/flyer'>Flyer vector created by pch.vector - www.freepik.com</a>
