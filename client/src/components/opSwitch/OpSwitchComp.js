@@ -14,7 +14,7 @@ export const ButtonSet = styled.button`
 
     /* float: right; */
     /* color: ${props => props.theme.colorPrimary}; */
-    color: #182e1e;
+    color: ${p => (p.active ? p.theme.shell :p.theme.activeGray)}; /*#182e1e;*/
     background: ${p => (p.active ? p.theme.activeGray : p.theme.unitGray)};
     border: .1rem solid ${p => p.theme.backdropDark};
     cursor: pointer;
@@ -24,4 +24,5 @@ export const ButtonSet = styled.button`
         outline: none;                           
         border: .2rem solid ${p => p.theme.activeGray}; 
     }
+    /* &:active { color: ${p => p.theme.shell}; } */
 `
