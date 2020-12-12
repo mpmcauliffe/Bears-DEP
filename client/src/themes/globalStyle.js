@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         width: 100%;
         font-size: 62.5%;
+        overflow-x: hidden;
     }
     body {
         margin: 0;
