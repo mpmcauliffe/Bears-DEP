@@ -25,6 +25,10 @@ export const Landing = () => {
             <img 
                 alt='title-BEARS'
                 src={require(`./BEARS_logo.png`)} />
+
+            <img
+                alt='crest-BEARS'
+                src={require(`./bear-crest.png`)} />
                 
             {/*<img 
                 alt='bears' 
