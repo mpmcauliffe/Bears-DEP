@@ -36,11 +36,13 @@ export const Subs = () => {
 
     }, [speciesOverlay, showSubOption])
 
-
+//console.log(showSubOption)
     return (
         <Fragment>
+            {/*  */}
             {showSubOption &&
                 <OpSwitch 
+                    //disabled={!showSubOption}
                     optButtons={subButtons}
                     handleToggle={handleToggleSubMenu}
                     defaultOpt={activeToggle} />

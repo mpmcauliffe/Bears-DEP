@@ -11,7 +11,7 @@ const SpeciesState = props => {
         speciesOverlay: 'black',
         overlayTransparency: false,
         subspeciesOverlay: '',
-        showSubOverly: false,
+        showSubOverlay: false,
     }
     const [state, dispatch] = useReducer(speciesReducer, initialState)
 
@@ -26,7 +26,7 @@ const SpeciesState = props => {
             value={{ speciesOverlay: state.speciesOverlay,          // string
                 overlayTransparency: state.overlayTransparency,     // bool
                 subspeciesOverlay: state.subspeciesOverlay,         // string
-                showSubOverly: state.showSubOverly,                 // bool
+                showSubOverlay: state.showSubOverlay,                 // bool
 
                 changeSpeciesOverlay,
                 changeOverlayOpacity,

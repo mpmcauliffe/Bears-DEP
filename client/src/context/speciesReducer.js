@@ -11,7 +11,7 @@ export default (state, action) => {
                 speciesOverlay: action.payload.split(' ')[0].toLowerCase(),
                 overlayTransparency: false,
                 subspeciesOverlay: '',
-                showSubOverly: false,
+                showSubOverlay: false,
             }
         
         case CHANGE_OVERLAY_OPACITY:
@@ -24,7 +24,7 @@ export default (state, action) => {
                         ? 'americanus'
                         : 'atlas'
                     : state.subspeciesOverlay,
-                showSubOverly: mod.split(' ')[0].toLowerCase() === 'show' ? true : false,
+                showSubOverlay: mod.split(' ')[0].toLowerCase() === 'show' ? true : false,
             }
 
         case ADD_SUBSPECIES_OVERLAY:

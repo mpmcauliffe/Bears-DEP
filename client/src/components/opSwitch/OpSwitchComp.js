@@ -24,5 +24,9 @@ export const ButtonSet = styled.button`
         outline: none;                           
         border: .2rem solid ${p => p.theme.activeGray}; 
     }
+    /* &:disabled {
+        color: ${p => p.theme.shell};
+        background: ${p => p.theme.unitGray};
+    } */
     /* &:active { color: ${p => p.theme.shell}; } */
 `

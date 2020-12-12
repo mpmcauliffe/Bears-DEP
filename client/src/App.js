@@ -28,9 +28,15 @@ const App = props => {
             <SpeciesState>
                 {/*  */}
                 <Landing />
-                <Map />
+                
+                <div style={{ marginTop: '12rem' }} />
+                
+                <div style={{ position: 'relative', }}>
+                    <Map />
+                    <Subs />
+                </div>
+
                 <MainController />
-                <Subs />
 
                 <ContentContainer>
                     <MainText />

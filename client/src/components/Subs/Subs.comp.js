@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 
 export const SubBay = styled.div`
@@ -28,7 +28,7 @@ export const SubBay = styled.div`
     @media (min-width: 1280px) {
         position: absolute;
         right: ${p => p.posModifier ? '1%' : '-80rem'};
-        top: 3rem;
+        top: 0;
         height: 41.5rem;
         width: 46.5rem;
         transition: right 500ms;
