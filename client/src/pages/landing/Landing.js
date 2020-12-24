@@ -26,7 +26,10 @@ const LandingContainer = styled.div`
     }
     @media (max-width: 540px) { 
         img { width: 90%; } 
-        img:nth-child(2) { width: 73%; }
+        img:nth-child(2) { 
+            width: 97%; 
+            margin-top: 5rem;
+        }
     }
 `
 
@@ -41,7 +44,7 @@ export const Landing = () => {
 
             <img
                 alt='crest-BEARS'
-                src={require(`./bear-crest.png`)} />
+                src={require(`./crest.png`)} />
                 
             {/*<img 
                 alt='bears' 
