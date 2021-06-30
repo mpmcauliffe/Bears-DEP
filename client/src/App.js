@@ -7,7 +7,8 @@ import { MainController, Map, MainText, Subs, } from './components'
 
 const BackgroundContainer = styled.div`
     width: 100%;
-    background: linear-gradient(0deg, rgba(248,252,255,1) 0%, rgba(242,250,255,1) 50%);
+    /* background: linear-gradient(0deg, rgba(248,252,255,1) 0%, rgba(242,250,255,1) 50%); */
+    background: linear-gradient(180deg, rgba(252,252,255,1) 0%, rgba(252,252,255,1) 72%, rgba(255,0,215,.2) 100%);
 `
 
 const ContentContainer = styled.section`
